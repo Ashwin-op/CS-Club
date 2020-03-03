@@ -1,0 +1,128 @@
+/*********************************************************************
+                            Home Styles
+*********************************************************************/
+html,
+body {
+  font-size: 16px;
+  font-family: "Spartan";
+  width: 100%;
+}
+
+.navbar {
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06);
+}
+
+@media (min-width: 768px) {
+  .navbar li {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.container-fluid {
+  padding: 20px 20px;
+  background: #e6e6e6;
+  width: 100%;
+  height: auto;
+}
+.adjust {
+  background: white;
+  padding: 20px;
+  height: 42%;
+  border-radius: 20px;
+}
+.round {
+  border-radius: 20px;
+}
+
+/*********************************************************************
+                            Footer Styles
+*********************************************************************/
+footer ul {
+  margin: 0px;
+  padding: 0px;
+}
+.footer-section {
+  background: rgb(32, 32, 32);
+  position: relative;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+.footer-widget ul li {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-decoration: none;
+}
+.footer-widget ul li a:hover {
+  color: #ff5e14;
+}
+.copyright-area {
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+}
+.copyright-text p a {
+  text-decoration: none;
+  color: #ff5e14;
+}
+
+/*********************************************************************
+                          Events Styles
+*********************************************************************/
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("https://images.unsplash.com/photo-1419133203517-f3b3ed0ba2bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.events-tab {
+  margin: 50px;
+}
+
+.tab-content div {
+  margin-top: 15px;
+}
