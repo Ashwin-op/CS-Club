@@ -114,89 +114,149 @@
         </div>
     </header>
 
-    <!-- News, Acheivements and Associate -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-lg-6">
-                <div class="row text-center">
-                    <div class="col-12">
-                        <h1>NEWS</h1>
+    <!-- News/Events, Associates & Achievements -->
+    <div class="content-container">
+        <!-- News Container -->
+        <div class="news-container">
+            <div class="container-positioner">
+                <div class="news-tag-heading">
+                    <p>NEWS/EVENTS</p>
+                </div>
+                <div class="news-items">
+                    <div class="news-box" style="display: flex;">
+                        <div class="image-box">
+                            <img src="./src/img/shakti.png">
+                        </div>
+                        <p>Headline</p>
+                        <div class="button-container">
+                            <div class="add-button" onclick="panelActive(1)" id="panelAddButton">+</div>
+                        </div>
+                    </div>
+                    <div class="panel" id="panel_id">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="news-items">
+                    <div class="news-box" style="display: flex;">
+                        <div class="image-box">
+                            <img src="./src/img/shakti.png">
+                        </div>
+                        <p>Headline</p>
+                        <div class="button-container">
+                            <div class="add-button" onclick="panelActive(2)" id="panelAddButton">+</div>
+                        </div>
+                    </div>
+                    <div class="panel" id="panel_id">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="news-items">
+                    <div class="news-box" style="display: flex;">
+                        <div class="image-box">
+                            <img src="./src/img/shakti.png">
+                        </div>
+                        <p>Headline</p>
+                        <div class="button-container">
+                            <div class="add-button" onclick="panelActive(3)" id="panelAddButton">+</div>
+                        </div>
+                    </div>
+                    <div class="panel" id="panel_id">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="news-items">
+                    <div class="news-box" style="display: flex;">
+                        <div class="image-box">
+                            <img src="./src/img/shakti.png">
+                        </div>
+                        <p>Headline</p>
+                        <div class="button-container">
+                            <div class="add-button" onclick="panelActive(4)" id="panelAddButton">+</div>
+                        </div>
+                    </div>
+                    <div class="panel" id="panel_id">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="news-items">
+                    <div class="news-box" style="display: flex;">
+                        <div class="image-box">
+                            <img src="./src/img/shakti.png">
+                        </div>
+                        <p>Headline</p>
+                        <div class="button-container">
+                            <div class="add-button" onclick="panelActive(5)" id="panelAddButton">+</div>
+                        </div>
+                    </div>
+                    <div class="panel" id="panel_id">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="news-items">
+                    <div class="news-box" style="display: flex;">
+                        <div class="image-box">
+                            <img src="./src/img/shakti.png">
+                        </div>
+                        <p>Headline</p>
+                        <div class="button-container">
+                            <div class="add-button" onclick="panelActive(6)" id="panelAddButton">+</div>
+                        </div>
+                    </div>
+                    <div class="panel" id="panel_id">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                 </div>
 
-                <div class="row mb-2">
-                    <div class="col-md-12">
-                        <div class="card flex-md-row mb-4 round h-md-250">
-                            <img class="card-img-right flex-auto p-4 d-md-block"
-                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAREAAAC4CAMAAADzLiguAAAALVBMVEX////d3d3i4uL7+/vo6Ojw8PD19fXa2tre3t7l5eXr6+v4+Pjz8/Pq6urx8fEWotW1AAABt0lEQVR4nO3a23KCMBRAUW4SLqX//7ktRWyrUM2D45Sz1jOZYfZECDFFAQAAAAAAAAAAAAAAAAAAAAAAwD9VZ3v1HT9X25XZuvbVd/1MVcovkqpX3/UzVflByjJAkfS4EEX6sX1cX3aHL5KmnAFTOv4cSU3OgEaRK5GKtE3Vv90dEKhIM79H7i814hQZlqVa6u8MCFOkvixIx78HhCkyrqv5dPp7QJgirSJnfjXXHniynqpq+N4TiVNkfvt+qq73g8ZufimXl99SoCJFO/XNzQptfb5cPn4iFdkyro+Xbk0SvMglyPcsiV2k7n7uOS7XhS5S/95y7L4uDF3kZg92vjJykf56m76bLw1c5CbI8nidAuw8bxfZDLLMlKBFTjtByrBzpGgVWbw167+6oyKf6n7+2jt/1rV7j5JARd7LNJ8VSOXy+T+k7ZMDYYrU5/dLNzeZ6mL3f/IoRX6/Xb6a7PxuYhQZN06SnHYmSYgiw+YKdecA0uGLTEWbd9To6EXKZp4gOefRDl8kmyKKKKLID4pcGzIObl4Mr77rp2pP2Q59CBwAAAAAAAAAAAAAAAAAAAAAAIBIPgCrzhCdRl16jwAAAABJRU5ErkJggg=="
-                                alt="Card image cap" />
-                            <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                                <h3 class="mb-0">
-                                    <a class="text-dark" href="#">content</a>
-                                </h3>
-                            </div>
-                        </div>
+            </div>
+        </div>
+        <!-- Associates Container -->
+        <div class="associates-container">
+            <div class="pseudo-associates-container">
+                <div class="associates-heading">
+                    <p>ASSOCIATES</p>
+                </div>
+                <div class="associates-image-container">
+                    <div class="associates-image-holder">
+                        <img src="./src/img/shakti.png">
                     </div>
-                    <div class="col-md-12">
-                        <div class="card flex-md-row mb-4 round h-md-250">
-                            <img class="card-img-right flex-auto p-4 d-md-block"
-                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAREAAAC4CAMAAADzLiguAAAALVBMVEX////d3d3i4uL7+/vo6Ojw8PD19fXa2tre3t7l5eXr6+v4+Pjz8/Pq6urx8fEWotW1AAABt0lEQVR4nO3a23KCMBRAUW4SLqX//7ktRWyrUM2D45Sz1jOZYfZECDFFAQAAAAAAAAAAAAAAAAAAAAAAwD9VZ3v1HT9X25XZuvbVd/1MVcovkqpX3/UzVflByjJAkfS4EEX6sX1cX3aHL5KmnAFTOv4cSU3OgEaRK5GKtE3Vv90dEKhIM79H7i814hQZlqVa6u8MCFOkvixIx78HhCkyrqv5dPp7QJgirSJnfjXXHniynqpq+N4TiVNkfvt+qq73g8ZufimXl99SoCJFO/XNzQptfb5cPn4iFdkyro+Xbk0SvMglyPcsiV2k7n7uOS7XhS5S/95y7L4uDF3kZg92vjJykf56m76bLw1c5CbI8nidAuw8bxfZDLLMlKBFTjtByrBzpGgVWbw167+6oyKf6n7+2jt/1rV7j5JARd7LNJ8VSOXy+T+k7ZMDYYrU5/dLNzeZ6mL3f/IoRX6/Xb6a7PxuYhQZN06SnHYmSYgiw+YKdecA0uGLTEWbd9To6EXKZp4gOefRDl8kmyKKKKLID4pcGzIObl4Mr77rp2pP2Q59CBwAAAAAAAAAAAAAAAAAAAAAAIBIPgCrzhCdRl16jwAAAABJRU5ErkJggg=="
-                                alt="Card image cap" />
-                            <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                                <h3 class="mb-0">
-                                    <a class="text-dark" href="#">content</a>
-                                </h3>
-                            </div>
-                        </div>
+                    <div class="associates-image-holder">
+                        <img src="./src/img/shakti.png">
                     </div>
-                    <div class="col-md-12">
-                        <div class="card flex-md-row round h-md-250">
-                            <img class="card-img-right flex-auto p-4 d-md-block"
-                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAREAAAC4CAMAAADzLiguAAAALVBMVEX////d3d3i4uL7+/vo6Ojw8PD19fXa2tre3t7l5eXr6+v4+Pjz8/Pq6urx8fEWotW1AAABt0lEQVR4nO3a23KCMBRAUW4SLqX//7ktRWyrUM2D45Sz1jOZYfZECDFFAQAAAAAAAAAAAAAAAAAAAAAAwD9VZ3v1HT9X25XZuvbVd/1MVcovkqpX3/UzVflByjJAkfS4EEX6sX1cX3aHL5KmnAFTOv4cSU3OgEaRK5GKtE3Vv90dEKhIM79H7i814hQZlqVa6u8MCFOkvixIx78HhCkyrqv5dPp7QJgirSJnfjXXHniynqpq+N4TiVNkfvt+qq73g8ZufimXl99SoCJFO/XNzQptfb5cPn4iFdkyro+Xbk0SvMglyPcsiV2k7n7uOS7XhS5S/95y7L4uDF3kZg92vjJykf56m76bLw1c5CbI8nidAuw8bxfZDLLMlKBFTjtByrBzpGgVWbw167+6oyKf6n7+2jt/1rV7j5JARd7LNJ8VSOXy+T+k7ZMDYYrU5/dLNzeZ6mL3f/IoRX6/Xb6a7PxuYhQZN06SnHYmSYgiw+YKdecA0uGLTEWbd9To6EXKZp4gOefRDl8kmyKKKKLID4pcGzIObl4Mr77rp2pP2Q59CBwAAAAAAAAAAAAAAAAAAAAAAIBIPgCrzhCdRl16jwAAAABJRU5ErkJggg=="
-                                alt="Card image cap" />
-                            <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                                <h3 class="mb-0">
-                                    <a class="text-dark" href="#">content</a>
-                                </h3>
-                            </div>
-                        </div>
+                    <div class="associates-image-holder">
+                        <img src="./src/img/shakti.png">
+                    </div>
+                    <div class="associates-image-holder">
+                        <img src="./src/img/shakti.png">
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6">
-                <div class="row text-center">
-                    <div class="col-12">
-                        <h1>ASSOCIATES</h1>
-                    </div>
+        </div>
+        <div class="achievements-container">
+            <div class="pseudo-achievements-container">
+                <div class="achievements-heading">
+                    <p>Achievements</p>
                 </div>
-                <div class="adjust">
-                    <div class="row">
-                        <div class="col-12">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                            voluptates sapiente enim doloribus ipsa ullam, neque suscipit,
-                            deleniti omnis libero impedit animi voluptatem minus corrupti
-                            molestias qui. Cupiditate libero nobis, veniam fuga aperiam eius
-                            cumque ab, repellat modi odit sed obcaecati? Error corrupti qui
-                            culpa assumenda enim officia nihil laboriosam.
-                        </div>
+                <div class="box-of-achievements">
+                    <div class="achievements-box">
+                        <img src="./src/img/shakti.png">
                     </div>
-                </div>
-
-                <div class="row text-center mt-2">
-                    <div class="col-12">
-                        <h1>ACHEIVEMENTS</h1>
+                    <div class="achievements-box">
+                        <img src="./src/img/shakti.png">
                     </div>
-                </div>
-                <div class="adjust">
-                    <div class="row">
-                        <div class="col-12">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                            magnam distinctio sapiente est deleniti omnis quibusdam corporis
-                            quas accusamus cupiditate. Quisquam, assumenda! Sint quasi eos
-                            dicta expedita, ut saepe nisi cum adipisci modi tempore cumque
-                            vel architecto amet mollitia aut optio ipsam voluptatibus
-                            obcaecati? Nisi enim dolores excepturi quos nobis!
-                        </div>
+                    <div class="achievements-box">
+                        <img src="./src/img/shakti.png">
                     </div>
                 </div>
             </div>
@@ -215,6 +275,70 @@
                     <p class="lead text-muted wow fadeInRight" data-wow-delay="100ms">Lorem, ipsum dolor sit amet
                         consectetur adipisicing elit. Beatae, nihil.
                     </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="blogWidgetContainer">
+        <h1>FAQ Section</h1>
+        <div class="accordion">
+            <h3 onclick="accordActive(1)">Question 1: What is Lorem Ipsum?</h3>
+            <div class="accContent">
+                <div class="contnet-inner">
+                    <p>Loren Ipsum is a simple dummy text of the printing and typesetting Industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with Desktop publishing Software like Aldus Pagemaker including versions of
+                        Lorem Ipsum.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <h3 onclick="accordActive(2)">Question 1: What is Lorem Ipsum?</h3>
+            <div class="accContent">
+                <div class="contnet-inner">
+                    <p>Loren Ipsum is a simple dummy text of the printing and typesetting Industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with Desktop publishing Software like Aldus Pagemaker including versions of
+                        Lorem Ipsum.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <h3 onclick="accordActive(3)">Question 1: What is Lorem Ipsum?</h3>
+            <div class="accContent">
+                <div class="contnet-inner">
+                    <p>Loren Ipsum is a simple dummy text of the printing and typesetting Industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with Desktop publishing Software like Aldus Pagemaker including versions of
+                        Lorem Ipsum.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <h3 onclick="accordActive(4)">Question 1: What is Lorem Ipsum?</h3>
+            <div class="accContent">
+                <div class="contnet-inner">
+                    <p>Loren Ipsum is a simple dummy text of the printing and typesetting Industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with Desktop publishing Software like Aldus Pagemaker including versions of
+                        Lorem Ipsum.</p>
                 </div>
             </div>
         </div>
