@@ -54,7 +54,7 @@ body {
   width: 95%;
   grid-area: box1;
   margin: 0 auto;
-  background: rgba(190, 180, 135, 0.8);
+  background: rgba(72, 158, 216, 0.8);
   border-radius: 1rem;
   overflow: auto;
   overflow-x: hidden;
@@ -95,7 +95,7 @@ body {
   width: 85%;
   min-height: 7em;
   display: block;
-  background: #fff;
+  background: #ffe83c;
   justify-content: center;
   align-items: center;
   align-self: center;
@@ -147,15 +147,16 @@ body {
 }
 .panel {
   padding: 0 18px;
-  width: 100%;
+  width: 95%;
   display: flex;
   position: relative;
   display: none;
   left: 0;
-  margin: 20px 0;
+  margin: 20px;
   overflow: auto;
   background-color: white;
   overflow: hidden;
+  border-radius: 10px;
 }
 .panel p {
   overflow: auto;
@@ -168,9 +169,8 @@ body {
   grid-area: box2;
   margin: 0 auto;
   border-radius: 1rem;
-  background: rgba(190, 180, 135, 0.69);
+  background: rgba(72, 158, 216, 0.8);
   box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.6);
-  background-filter: blur(10px);
 }
 .associates-container .pseudo-associates-container .associates-image-container {
   display: flex;
@@ -183,7 +183,7 @@ body {
   padding: 10px 0px;
   margin: 20px;
   border-radius: 8px;
-  background: #fff;
+  background: #ffe83c;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.6);
 }
 .associates-image-container .associates-image-holder img {
@@ -195,7 +195,7 @@ body {
   grid-area: box3;
   margin: 0 auto;
   border-radius: 1rem;
-  background: rgba(190, 180, 135, 0.69);
+  background: rgba(72, 158, 216, 0.8);
   box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
 .achievements-container .pseudo-achievements-container .achievements-heading {
@@ -225,7 +225,7 @@ body {
   padding: 10px 0px;
   margin: 20px;
   border-radius: 8px;
-  background: #fff;
+  background: #ffe83c;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.6);
 }
 .achievements-container .pseudo-achievements-container .achievements-box img {
@@ -249,18 +249,19 @@ body {
   padding: 30px;
 }
 .accordion {
-  background: rgba(255, 230, 240, 0.5);
+  background: rgba(72, 158, 216, 0.8);
   padding: 1% 5%;
   border-radius: 9px;
 }
 .accordion h3 {
-  background: rgba(0, 0, 0, 0.6);
+  background: #ffe83c;
   padding: 15px 10px;
   font-size: 20px;
   border-radius: 5px;
-  color: #fff;
+  color: rgb(0, 0, 0);
   cursor: pointer;
   letter-spacing: 2px;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.6);
 }
 .accordion h3:after {
   content: "+";
@@ -271,7 +272,6 @@ body {
   transform: translate(-50%);
 }
 .accContent {
-  background: #fff;
   border-radius: 5px;
   margin-top: 0px;
   display: none;
@@ -358,15 +358,24 @@ footer ul {
 }
 
 /*********************************************************************
-                          Events Styles
+                Splash(Events/Gallery/People) Styles
 *********************************************************************/
 .masthead {
   height: 100vh;
   min-height: 500px;
-  background-image: url("https://images.unsplash.com/photo-1419133203517-f3b3ed0ba2bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+}
+
+.masthead::before {
+  /* background-image: url("https://images.unsplash.com/photo-1419133203517-f3b3ed0ba2bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"); */
+  background-image: url("https://source.unsplash.com/random");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
 }
 
 .events-tab {
@@ -375,4 +384,132 @@ footer ul {
 
 .tab-content div {
   margin-top: 15px;
+}
+
+/*********************************************************************
+                          Gallery Styles
+*********************************************************************/
+
+.photo-gallery {
+  color: #313437;
+  background-color: #fff;
+}
+
+.photo-gallery p {
+  color: #7d8285;
+}
+
+.photo-gallery h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: inherit;
+}
+
+@media (max-width: 767px) {
+  .photo-gallery h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+  }
+}
+
+.photo-gallery .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+.photo-gallery .intro p {
+  margin-bottom: 0;
+}
+
+.photo-gallery .photos {
+  padding-bottom: 20px;
+}
+
+.photo-gallery .item {
+  padding-bottom: 30px;
+}
+
+/*********************************************************************
+                            Team Styles
+*********************************************************************/
+.hovereffect {
+  width: max-content;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  color: #fff;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+
+.hovereffect p {
+  color: #fff;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+
+.hovereffect:hover p,
+.hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
